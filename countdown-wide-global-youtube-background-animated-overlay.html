@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="assets/css/custom.css">
 
   </head>
-  <body class="layout-wide">
+  <body class="layout-wide slideshow-background">
 
     <!-- Loader -->
     <div class="loader bg-dark">
@@ -93,6 +93,16 @@
       <i class="fas fa-angle-up"></i>
     </a>
 
+    <!-- Global overlay -->
+    <div class="overlay overlay-global">
+      <div class="overlay-inner bg-image-holder bg-cover">
+        <img src="assets/images/image-4.jpg" alt="background">
+      </div>
+      <div class="yt-bg-player" data-property="{videoURL:'http://youtu.be/iXkJmJa4NvE',containment:'#youtube-background',startAt:0,mute:true,autoPlay:true,loop:true,opacity:1}"></div>
+      <div id="youtube-background" class="overlay-inner overlay-video bg-black"></div>
+      <div class="overlay-inner overlay-global-color"></div>
+    </div>
+
     <!-- Scroll progress -->
     <div class="scroll-progress">
       <div class="sp-left">
@@ -109,19 +119,16 @@
     <div class="ln-fullpage" data-navigation="true">
 
       <!-- Section - Home -->
-      <section class="ln-section d-flex min-vh-100" data-anchor="home" data-tooltip="Home" data-ui="light" data-navbar="navbar-dark">
-        <div class="overlay overlay-advanced">
-          <div class="overlay-inner bg-image-holder bg-cover bg-bottom-center">
-            <img src="assets/images/image-11.jpg" alt="background">
-          </div>
-          <div class="overlay-inner bg-dark opacity-70"></div>
+      <section class="ln-section d-flex min-vh-100" data-anchor="home" data-tooltip="Home" data-overlay-color="#00050e" data-overlay-opacity="50">
+        <div class="overlay overlay-advanced has-mobile-overlay">
+          <div class="overlay-inner"></div>
         </div>
         <div class="container align-self-center text-white">
           <div class="row">
             <div class="col-12 col-lg-9 col-xl-6">
 
-              <h1 class="mb-4 animated" data-animation="fadeInUp">We bulid beautiful digital experiences</h1>
-              <p class="mb-7 animated" data-animation="fadeInUp" data-animation-delay="200">A beautiful and easy to use template that lets you create the perfect website for your future agency or business.</p>
+              <div class="countdown mb-4 animated" data-animation="fadeInUp" data-countdown="2022/05/1 12:00:00"></div>
+              <h3 class="mb-7 animated" data-animation="fadeInUp" data-animation-delay="200">Our website is under construction. <br/> We`ll be here soon with our new awesome site.</h3>
               <a href="#our-mission" class="btn btn-white mr-3 scrollto animated" data-animation="fadeInUp" data-animation-delay="400">Learn more</a>
               <button type="button" class="btn btn-soft-white scrollto animated" data-animation="fadeInUp" data-animation-delay="600" data-toggle="modal" data-target="#subscribeModal">Subscribe</button>
 
@@ -131,8 +138,11 @@
       </section>
 
       <!-- Section - Our mission -->
-      <section class="ln-section d-xl-flex" data-anchor="our-mission" data-tooltip="Our mission" data-ui="dark" data-navbar="navbar-light">
-        <div class="container align-self-xl-center">
+      <section class="ln-section d-xl-flex" data-anchor="our-mission" data-tooltip="Our mission" data-overlay-color="#00050e" data-overlay-opacity="90">
+        <div class="overlay overlay-advanced has-mobile-overlay">
+          <div class="overlay-inner"></div>
+        </div>
+        <div class="container align-self-xl-center text-white">
 
           <div class="row">
             <div class="col-12 col-xl-6">
@@ -144,8 +154,12 @@
         </div>
       </section>
 
-      <section class="ln-section d-xl-flex bg-light" data-anchor="what-we-do" data-tooltip="What we do" data-ui="dark" data-navbar="navbar-light">
-        <div class="container align-self-xl-center">
+      <!-- Section - What we do -->
+      <section class="ln-section d-xl-flex" data-anchor="what-we-do" data-tooltip="What we do" data-overlay-color="#2d5aec" data-overlay-opacity="90">
+        <div class="overlay overlay-advanced has-mobile-overlay">
+          <div class="overlay-inner"></div>
+        </div>
+        <div class="container align-self-xl-center text-white">
 
           <div class="row">
             <div class="col-12 col-xl-5 mb-8 mb-xl-0">
@@ -156,42 +170,42 @@
               <div class="row">
 
                 <div class="col-md-6 col-sm-6 mb-8 animated" data-animation="fadeInUp">
-                  <div class="icon-7x text-primary mb-4">
+                  <div class="icon-7x mb-4">
                     <i class="ti-timer"></i>
                   </div>
                   <h3 class="h4 mb-0">Launch Quickly</h3>
                 </div>
 
                 <div class="col-md-6 col-sm-6 mb-8 animated" data-animation="fadeInUp" data-animation-delay="150">
-                  <div class="icon-7x text-primary mb-4">
+                  <div class="icon-7x mb-4">
                     <i class="ti-brush-alt"></i>
                   </div>
                   <h3 class="h4 mb-0">Stylish Design</h3>
                 </div>
 
                 <div class="col-md-6 col-sm-6 mb-8 animated" data-animation="fadeInUp" data-animation-delay="300">
-                  <div class="icon-7x text-primary mb-4">
+                  <div class="icon-7x mb-4">
                     <i class="ti-book"></i>
                   </div>
                   <h3 class="h4 mb-0">Well Documented</h3>
                 </div>
 
                 <div class="col-md-6 col-sm-6 mb-8 animated" data-animation="fadeInUp" data-animation-delay="450">
-                  <div class="icon-7x text-primary mb-4">
+                  <div class="icon-7x mb-4">
                     <i class="ti-layers"></i>
                   </div>
                   <h3 class="h4 mb-0">Multiple Styles</h3>
                 </div>
 
                 <div class="col-md-6 col-sm-6 mb-8 mb-sm-0 animated" data-animation="fadeInUp" data-animation-delay="600">
-                  <div class="icon-7x text-primary mb-4">
+                  <div class="icon-7x mb-4">
                     <i class="ti-settings"></i>
                   </div>
                   <h3 class="h4 mb-0">Fully Customizable</h3>
                 </div>
 
                 <div class="col-md-6 col-sm-6 animated" data-animation="fadeInUp" data-animation-delay="750">
-                  <div class="icon-7x text-primary mb-4">
+                  <div class="icon-7x mb-4">
                     <i class="ti-headphone-alt"></i>
                   </div>
                   <h3 class="h4 mb-0">Friendly Support</h3>
@@ -205,12 +219,9 @@
       </section>
 
       <!-- Section - Our solutions -->
-      <section class="ln-section d-xl-flex" data-anchor="our-solutions" data-tooltip="Our solutions" data-ui="light" data-navbar="navbar-dark">
-        <div class="overlay overlay-advanced">
-          <div class="overlay-inner bg-image-holder bg-cover">
-            <img src="assets/images/image-3.jpg" alt="background">
-          </div>
-          <div class="overlay-inner bg-dark opacity-50"></div>
+      <section class="ln-section d-xl-flex" data-anchor="our-solutions" data-tooltip="Our solutions" data-overlay-color="#00050e" data-overlay-opacity="90">
+        <div class="overlay overlay-advanced has-mobile-overlay">
+          <div class="overlay-inner"></div>
         </div>
         <div class="container align-self-xl-center text-white">
           <div class="row mb-8">
@@ -246,15 +257,18 @@
       </section>
 
       <!-- Section - Our work -->
-      <section class="ln-section d-xl-flex" data-anchor="our-work" data-tooltip="Our work" data-ui="dark" data-navbar="navbar-light">
-        <div class="container align-self-xl-center">
+      <section class="ln-section d-xl-flex" data-anchor="our-work" data-tooltip="Our work" data-overlay-color="#00050e" data-overlay-opacity="80">
+        <div class="overlay overlay-advanced has-mobile-overlay">
+          <div class="overlay-inner"></div>
+        </div>
+        <div class="container align-self-xl-center text-white">
           <div class="row mb-8">
             <div class="col-12 col-xl-6">
               <h2 class="mb-4 animated" data-animation="fadeInUp">Our Work</h2>
               <p class="animated" data-animation="fadeInUp" data-animation-delay="150">Donec sollicitudin libero vitae massa placerat tempor. Duis rutrum nisl eu ipsum varius, nec feugiat tortor vulputate. Integer pellentesque leo id metus dictum, a tristique tellus faucibus.</p>
             </div>
           </div>
-          <div class="slider animated" data-animation="fadeInUp" data-animation-delay="300" data-slick='{"dots": true}'>
+          <div class="slider dots-light animated" data-animation="fadeInUp" data-animation-delay="300" data-slick='{"dots": true}'>
 
             <div>
               <div class="portfolio-item mb-8">
@@ -272,9 +286,9 @@
                   </div>
                   <div class="col-12 col-lg-5">
                     <div class="pt-lg-8">
-                      <div class="divider divider-alt bg-dark mt-0 mb-8 d-none d-lg-block"></div>
-                      <h4 class="h3 item-title">Mountains</h4>
-                      <p class="item-cat">Web Design</p>
+                      <div class="divider divider-alt bg-white mt-0 mb-8 d-none d-lg-block"></div>
+                      <h4 class="h3">Mountains</h4>
+                      <p class="text-italic">Web Design</p>
                     </div>
                   </div>
                 </div>
@@ -297,9 +311,9 @@
                   </div>
                   <div class="col-12 col-lg-5 d-lg-flex justify-content-lg-end text-lg-right">
                     <div class="pt-lg-8">
-                      <div class="divider divider-alt bg-dark mt-0 mb-8 ml-auto mr-0 d-none d-lg-block"></div>
-                      <h4 class="h3 item-title">Love</h4>
-                      <p class="item-cat">Web Design</p>
+                      <div class="divider divider-alt bg-white mt-0 mb-8 ml-auto mr-0 d-none d-lg-block"></div>
+                      <h4 class="h3">Love</h4>
+                      <p class="text-italic">Web Design</p>
                     </div>
                   </div>
                 </div>
@@ -322,9 +336,9 @@
                   </div>
                   <div class="col-12 col-lg-5">
                     <div class="pt-lg-8">
-                      <div class="divider divider-alt bg-dark mt-0 mb-8 d-none d-lg-block"></div>
-                      <h4 class="h3 item-title">Beautiful Girl</h4>
-                      <p class="item-cat">Brand</p>
+                      <div class="divider divider-alt bg-white mt-0 mb-8 d-none d-lg-block"></div>
+                      <h4 class="h3">Beautiful Girl</h4>
+                      <p class="text-italic">Brand</p>
                     </div>
                   </div>
                 </div>
@@ -347,9 +361,9 @@
                   </div>
                   <div class="col-12 col-lg-5 d-lg-flex justify-content-lg-end text-lg-right">
                     <div class="pt-lg-8">
-                      <div class="divider divider-alt bg-dark mt-0 mb-8 ml-auto mr-0 d-none d-lg-block"></div>
-                      <h4 class="h3 item-title">Future City</h4>
-                      <p class="item-cat">Web Design</p>
+                      <div class="divider divider-alt bg-white mt-0 mb-8 ml-auto mr-0 d-none d-lg-block"></div>
+                      <h4 class="h3">Future City</h4>
+                      <p class="text-italic">Web Design</p>
                     </div>
                   </div>
                 </div>
@@ -372,9 +386,9 @@
                   </div>
                   <div class="col-12 col-lg-5">
                     <div class="pt-lg-8">
-                      <div class="divider divider-alt bg-dark mt-0 mb-8 d-none d-lg-block"></div>
-                      <h4 class="h3 item-title">Golden Gate Bridge</h4>
-                      <p class="item-cat">Design</p>
+                      <div class="divider divider-alt bg-white mt-0 mb-8 d-none d-lg-block"></div>
+                      <h4 class="h3">Golden Gate Bridge</h4>
+                      <p class="text-italic">Design</p>
                     </div>
                   </div>
                 </div>
@@ -385,8 +399,12 @@
         </div>
       </section>
 
-      <section class="ln-section d-xl-flex bg-light" data-anchor="contact" data-tooltip="Contact" data-ui="dark" data-navbar="navbar-light">
-        <div class="container align-self-center">
+      <!-- Section - Contact -->
+      <section class="ln-section d-xl-flex" data-anchor="contact" data-tooltip="Contact" data-overlay-color="#00050e" data-overlay-opacity="90">
+        <div class="overlay overlay-advanced has-mobile-overlay">
+          <div class="overlay-inner"></div>
+        </div>
+        <div class="container align-self-center text-white">
           <div class="row mb-7">
             <div class="col-12 col-xl-6">
               <h2 class="mb-4 animated" data-animation="fadeInUp">Contact Us</h2>
@@ -398,7 +416,7 @@
               <div class="row">
 
                 <div class="col-12 col-md-4 col-lg-6 mb-8 mb-md-0 mb-lg-5 animated" data-animation="fadeInUp" data-animation-delay="150">
-                  <div class="icon-5x text-primary mb-4">
+                  <div class="icon-5x mb-4">
                     <i class="ti-mobile"></i>
                   </div>
                   <p class="mb-0">(0091) 1111 1234567<br/>
@@ -406,7 +424,7 @@
                 </div>
 
                 <div class="col-12 col-md-4 col-lg-6 mb-8 mb-md-0 mb-lg-5 animated" data-animation="fadeInUp" data-animation-delay="150">
-                  <div class="icon-5x text-primary mb-4">
+                  <div class="icon-5x mb-4">
                     <i class="ti-location-pin"></i>
                   </div>
                   <p class="mb-0">69 Halsey St, New York, Ny 10002,<br/>
@@ -414,11 +432,11 @@
                 </div>
 
                 <div class="col-12 col-md-4 col-lg-6 animated" data-animation="fadeInUp" data-animation-delay="150">
-                  <div class="icon-5x text-primary mb-4">
+                  <div class="icon-5x mb-4">
                     <i class="ti-email"></i>
                   </div>
-                  <p class="mb-0"><a href="mailto:support@example.com" class="text-dark">support@example.com</a><br/>
-                  <a href="mailto:hello@example.com" class="text-dark">hello@example.com</a></p>
+                  <p class="mb-0"><a href="mailto:support@example.com" class="text-white">support@example.com</a><br/>
+                  <a href="mailto:hello@example.com" class="text-white">hello@example.com</a></p>
                 </div>
 
               </div>
@@ -459,7 +477,7 @@
                     <input type="hidden" name="prefix" value="cf-">
 
                     <div class="col-12">
-                      <button class="btn btn-primary" type="submit" id="cf-submit" name="cf-submit">Send Message</button>
+                      <button class="btn btn-soft-white" type="submit" id="cf-submit" name="cf-submit">Send Message</button>
                     </div>
 
                   </div>
@@ -604,9 +622,17 @@
     <script src="assets/vendor/granim.js/dist/granim.min.js"></script>
     <script src="assets/vendor/slick/slick.min.js"></script>
     <script src="assets/vendor/vegas/vegas.min.js"></script>
+    <script src="assets/vendor/jquery.mb.YTPlayer/dist/jquery.mb.YTPlayer.min.js"></script>
 
     <!-- Theme JS -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+    // Youtube Background
+    if ($('.yt-bg-player').length > 0) {
+      $('.yt-bg-player').YTPlayer();
+    }
+    </script>
 
   </body>
 </html>
